@@ -85,7 +85,11 @@ dist
 sw.*
 
 # Python
+
 *.pyc
 __pycache__
-*.sqlite3
 .venv
+
+# Django
+*.sqlite3
+staticfiles/

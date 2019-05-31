@@ -38,15 +38,16 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-    '@nuxtjs/pwa',
-  ],
+  // modules: [
+  //   '@nuxtjs/pwa',
+  // ],
 
   /*
   ** Build configuration
   */
   build: {
     publicPath: '/static/_nuxt/',
+    swURL: '/static/',
     /*
     ** You can extend webpack config here
     */

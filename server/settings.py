@@ -126,5 +126,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    NUXT_BUILD_ROOT
+    NUXT_BUILD_ROOT,
+    NUXT_DIST_DIR
 ]
