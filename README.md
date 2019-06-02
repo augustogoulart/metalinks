@@ -2,6 +2,8 @@
 
 > Playing around with Django &amp; Nuxt
 
+Live at [Involved](https://djx-involved.herokuapp.com/)
+
 ## Build Setup
 
 ``` bash
