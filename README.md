@@ -1,8 +1,10 @@
 # involved
 
->I'm discussing modern web development on Instagram while building a web app for online communities. Check it out on [@__gusgoulart __](https://www.instagram.com/__gusgoulart__/).
+I'm teaching modern web development on Instagram while building a web app for online communities. Check it out on [@__gusgoulart __](https://www.instagram.com/__gusgoulart__/).
 
 Live at [Involved](https://djx-involved.herokuapp.com/)
+
+
 
 ## Build Setup
 
