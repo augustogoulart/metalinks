@@ -1,24 +1,21 @@
 # involved
 
-> Playing around with Django &amp; Nuxt
+>I'm discussing modern web development on Instagram while building a web app for online communities. Check it out on [@__gusgoulart __](https://www.instagram.com/__gusgoulart__/).
 
 Live at [Involved](https://djx-involved.herokuapp.com/)
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install backend dependencies
+$ pipenv install
+
+# start the backend
+$ pipenv run python manage.py runserver
+
+# install frontend dependencies
 $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
