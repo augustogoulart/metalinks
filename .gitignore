@@ -93,3 +93,7 @@ __pycache__
 # Django
 *.sqlite3
 staticfiles/
+
+# Cypress
+/tests/e2e/videos/
+/tests/e2e/screenshots/
