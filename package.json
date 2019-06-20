@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "mocha ./tests/unit",
+    "test:unit": "mocha ./tests/unit",
     "test:e2e": "cypress run",
     "cypress": "cypress open"
   },
