@@ -1,6 +1,12 @@
 <template>
-  <section class="container">
-    <div>
+  <section>
+    <h1>Involved</h1>
+    <div class="container">
+      <Link />
+      <Link />
+      <Link />
+      <Link />
+      <Link />
       <Link />
     </div>
   </section>
@@ -20,7 +26,6 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;

@@ -1,3 +1,5 @@
 <template>
-    <h1>Involved</h1>
+  <div>
+    <a href="https://github.com/augustogoulart/involved">This is a link</a>
+  </div>
 </template>
