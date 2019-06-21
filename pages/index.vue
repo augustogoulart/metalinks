@@ -2,22 +2,17 @@
   <section>
     <h1>Involved</h1>
     <div class="container">
-      <Link />
-      <Link />
-      <Link />
-      <Link />
-      <Link />
-      <Link />
+      <LinkList />
     </div>
   </section>
 </template>
 
 <script>
-import Link from '~/components/Link'
+import LinkList from '~/components/LinkList'
 
 export default {
   components: {
-    Link
+    LinkList
   }
 }
 </script>
