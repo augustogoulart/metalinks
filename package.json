@@ -9,13 +9,12 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test:unit": "mocha ./tests/unit",
+    "test:unit": "jest",
     "test:e2e": "cypress run",
     "cypress": "cypress open"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
-    "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
     "tailwindcss": "^1.0.4"
   },
@@ -24,8 +23,9 @@
     "@babel/preset-env": "^7.4.5",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-core": "^7.0.0-bridge.0",
+    "jest": "^24.8.0",
     "cypress": "^3.3.1",
-    "mocha": "^6.1.4",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "vue-jest": "^3.0.4"
   }
 }
