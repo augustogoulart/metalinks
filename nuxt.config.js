@@ -27,6 +27,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/tailwind.css'
   ],
 
   /*
@@ -48,6 +49,13 @@ export default {
   build: {
     publicPath: '/static/_nuxt/',
     swURL: '/static/',
+    postcss: {
+      plugins: {
+        tailwindcss: './tailwind.config.js'
+      }
+    },
+
+
     /*
     ** You can extend webpack config here
     */
