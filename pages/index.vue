@@ -1,7 +1,7 @@
 <template>
   <section>
     <Navbar />
-    <LinkList />
+      <LinkList />
   </section>
 </template>
 

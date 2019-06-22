@@ -2,11 +2,11 @@
 describe("Home test", () => {
   it("Home page shows 'Involved'", () => {
     cy.visit("/");
-    cy.contains("h1", "Involved");
+    cy.contains("span", "Involved");
   });
 
   it("Home has links", () => {
     cy.visit("/");
-    cy.contains("a", "This is a link");
+    cy.contains("a", "https://github.com/augustogoulart/involved");
   })
 });
