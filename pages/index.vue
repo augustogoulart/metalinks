@@ -1,18 +1,18 @@
 <template>
   <section>
-    <h1>Involved</h1>
-    <div class="container mx-auto">
-      <LinkList />
-    </div>
+    <Navbar />
+    <LinkList />
   </section>
 </template>
 
 <script>
-import LinkList from '~/components/LinkList'
+import LinkList from '@/components/LinkList'
+import Navbar from '@/components/Navbar'
 
 export default {
   components: {
-    LinkList
+    LinkList,
+    Navbar
   }
 }
 </script>

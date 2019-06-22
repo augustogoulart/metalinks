@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "test": "jest && cypress run",
     "test:unit": "jest",
     "test:e2e": "cypress run",
     "cypress": "cypress open"
