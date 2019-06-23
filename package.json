@@ -12,7 +12,8 @@
     "test": "jest && cypress run",
     "test:unit": "jest",
     "test:e2e": "cypress run",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "codecov": "codecov"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
@@ -24,8 +25,9 @@
     "@babel/preset-env": "^7.4.5",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-core": "^7.0.0-bridge.0",
-    "jest": "^24.8.0",
+    "codecov": "^3.5.0",
     "cypress": "^3.3.1",
+    "jest": "^24.8.0",
     "nodemon": "^1.18.9",
     "vue-jest": "^3.0.4"
   }
