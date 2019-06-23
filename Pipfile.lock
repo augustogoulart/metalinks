@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "06d4c0a3cd0eb557100a9777097b4e8570ac065f88ade3bc0be916742820cf59"
+            "sha256": "5c96cfb2dd750de0586ccc726eec1287ace25eebd1d2acfca98a84598d18602e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -64,6 +64,7 @@
                 "sha256:f8019c5279eb32360ca03e9fac40a12667715546eed5c5eb59eb381f2f501260",
                 "sha256:fc5f4d209733750afd2714e9109816a29500718b32dd9a5db01c0cb3a019b96a"
             ],
+            "index": "pypi",
             "version": "==4.5.3"
         },
         "dj-database-url": {
@@ -304,6 +305,7 @@
                 "sha256:f8019c5279eb32360ca03e9fac40a12667715546eed5c5eb59eb381f2f501260",
                 "sha256:fc5f4d209733750afd2714e9109816a29500718b32dd9a5db01c0cb3a019b96a"
             ],
+            "index": "pypi",
             "version": "==4.5.3"
         },
         "idna": {

@@ -97,3 +97,7 @@ staticfiles/
 # Cypress
 /tests/e2e/videos/
 /tests/e2e/screenshots/
+
+# Codecov
+.coverage
+coverage.xml
