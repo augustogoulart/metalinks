@@ -15,6 +15,7 @@ dj-database-url = "*"
 dj-static = "*"
 pytest = "*"
 pytest-django = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.7"

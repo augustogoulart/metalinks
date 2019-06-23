@@ -97,3 +97,6 @@ staticfiles/
 # Cypress
 /tests/e2e/videos/
 /tests/e2e/screenshots/
+
+# Coverage
+.coverage
