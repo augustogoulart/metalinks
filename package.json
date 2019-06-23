@@ -12,7 +12,8 @@
     "test": "jest && cypress run",
     "test:unit": "jest",
     "test:e2e": "cypress run",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "codecov": "codecov"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
