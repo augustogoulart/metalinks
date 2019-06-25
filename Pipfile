@@ -17,6 +17,7 @@ pytest = "*"
 pytest-django = "*"
 pytest-cov = "*"
 coverage = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.7"
