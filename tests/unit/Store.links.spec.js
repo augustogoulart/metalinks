@@ -6,8 +6,4 @@ describe('Store:links', () => {
   test('Store has state', () => {
     expect(state).toBeTruthy()
   });
-
-  test('state has links', () => {
-    expect(state.list).toBeTruthy()
-  })
 });

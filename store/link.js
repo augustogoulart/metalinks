@@ -1,9 +1,23 @@
+import axios from 'axios';
+
 export const state = () => ({
-  list: {'url': 'http://link.com'}
+  links: []
 });
+
+export const mutations = {
+  setLinks: (state, links) => {
+    state.links = links
+  }
+};
+
+export const actions = {
+  setLinks: (context, links) => {
+    context.commit('setLinks', links)
+  }
+};
 
 export const getters = {
   getList: state => {
-    return state.list
+    return state.links
   }
 };
