@@ -12,6 +12,7 @@
 import Link from '~/components/Link'
 
 export default {
+  name: 'LinkList',
   components: {
     Link
   }
