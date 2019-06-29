@@ -17,7 +17,7 @@ import axios from 'axios';
 export default {
 
   async fetch ({ store }) {
-    let baseUrl = process.env.BASE_URL || 'http://localhost:8000/api/links/';
+    let baseUrl = 'https://djx-involved.herokuapp.com/api/links/';
     let { data } = await axios.get(baseUrl);
     store.commit('link/setLinks', data)
   },
