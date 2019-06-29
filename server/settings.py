@@ -17,10 +17,6 @@ from dj_database_url import parse as db_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-NUXT_DIST_DIR = os.path.join(BASE_DIR, 'dist')
-
-NUXT_BUILD_ROOT = os.path.join(NUXT_DIST_DIR, 'static')
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -65,7 +61,7 @@ ROOT_URLCONF = 'server.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [NUXT_DIST_DIR],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,12 +124,8 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    NUXT_BUILD_ROOT,
-    NUXT_DIST_DIR
-]
-
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
-    "https://djx-involved.herokuapp.com"
+    "https://djx-involved.herokuapp.com",
+    "https://involved-client.netlify.com"
 ]

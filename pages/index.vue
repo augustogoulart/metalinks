@@ -15,8 +15,10 @@ import {mapGetters} from 'vuex';
 import axios from 'axios';
 
 export default {
+
   async fetch ({ store }) {
-    let { data } = await axios.get('http://localhost:8000/api/links/');
+    let baseUrl = process.env.BASE_URL || 'http://localhost:8000/api/links/';
+    let { data } = await axios.get(baseUrl);
     store.commit('link/setLinks', data)
   },
   components: {
