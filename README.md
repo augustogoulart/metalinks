@@ -1,6 +1,8 @@
 # involved
 
-[![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701/badge.svg?token=0035ead190556e73db03b82d6069781f3093eb948867a08b08149abea8f12a7f "buddy pipeline")](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701)[![codecov](https://codecov.io/gh/augustogoulart/involved/branch/master/graph/badge.svg)](https://codecov.io/gh/augustogoulart/involved)
+[![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701/badge.svg?token=0035ead190556e73db03b82d6069781f3093eb948867a08b08149abea8f12a7f "buddy pipeline")](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701)
+[![codecov](https://codecov.io/gh/augustogoulart/involved/branch/master/graph/badge.svg)](https://codecov.io/gh/augustogoulart/involved)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d00e9e85-4d36-4666-962f-b4df356bd639/deploy-status)](https://app.netlify.com/sites/involved-client/deploys)
 
 
 
