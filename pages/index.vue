@@ -2,7 +2,7 @@
   <section>
     <Navbar />
     <div>
-      {{getList}}
+      {{data}}
     </div>
       <LinkList />
   </section>
@@ -12,17 +12,12 @@
 import LinkList from '@/components/LinkList'
 import Navbar from '@/components/Navbar'
 import {mapGetters} from 'vuex';
-import axios from 'axios';
 
 export default {
-
-  async fetch ({ store }) {
-    // let baseUrl = 'https://djx-involved.herokuapp.com/api/links/';
-    let baseUrl = 'http://localhost:8000/api/links/';
-    console.log(process);
-    let { data } = await axios.get(baseUrl);
-    store.commit('link/setLinks', data)
-  },
+  async asyncData({ $axios }) {
+  const data = await $axios.$get('http://localhost:8000/api/links/')
+  return { data }
+},
   components: {
     LinkList,
     Navbar
