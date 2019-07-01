@@ -15,7 +15,7 @@ import {mapGetters} from 'vuex';
 
 export default {
   async asyncData({ $axios }) {
-  const data = await $axios.$get('http://localhost:8000/api/links/')
+  const data = await $axios.$get('links/')
   return { data }
 },
   components: {
