@@ -13,7 +13,9 @@
     "test:unit": "jest",
     "test:e2e": "cypress run",
     "cypress": "cypress open",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "heroku-postbuild": "npm run build"
+
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
