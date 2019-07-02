@@ -2,7 +2,7 @@
   <section>
     <Navbar />
     <div>
-      {{data}}
+      {{links}}
     </div>
       <LinkList />
   </section>
@@ -11,22 +11,19 @@
 <script>
 import LinkList from '@/components/LinkList'
 import Navbar from '@/components/Navbar'
-import {mapGetters} from 'vuex';
+import {mapState} from 'vuex'
 
 export default {
-  async asyncData({ $axios }) {
-  const data = await $axios.$get('links/')
-  return { data }
-},
   components: {
     LinkList,
     Navbar
   },
-  computed:{
-    ...mapGetters({
-      getList: 'link/getList'
-    })
-  }
+  async fetch({store, error}) {
+    await store.dispatch('links/fetchLinks')
+  },
+  computed: mapState({
+      links: state => state.links.links
+  })
 }
 </script>
 

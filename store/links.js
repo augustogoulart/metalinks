@@ -1,16 +1,20 @@
+import LinkService from '@/services/LinkService'
+
 export const state = () => ({
   links: []
 });
 
 export const mutations = {
-  setLinks: (state, links) => {
+  SET_LINKS(state, links) {
     state.links = links
   }
 };
 
 export const actions = {
-  setLinks: (context, links) => {
-    context.commit('setLinks', links)
+  fetchLinks({commit}) {
+    return LinkService.getLinks().then(response => {
+      commit('SET_LINKS', response.data)
+    })
   }
 };
 
