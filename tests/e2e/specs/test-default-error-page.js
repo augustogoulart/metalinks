@@ -2,7 +2,7 @@
 
 describe("Errors should use default error layout", () => {
   it("Error page has message", () => {
-    cy.visit("/this-does-not-exist/");
+    cy.visit({url: "/this-does-not-exist/", failOnStatusCode: false});
     cy.contains("h1", "An error has occurred");
   });
 });

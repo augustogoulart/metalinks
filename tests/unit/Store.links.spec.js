@@ -1,4 +1,4 @@
-import {state as linkState} from '@/store/link'
+import {state as linkState} from '@/store/links'
 
 describe('Store:links', () => {
   const state = linkState();
