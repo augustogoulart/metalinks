@@ -22,6 +22,7 @@ def get_links(request):
     :return JSON response
     """
     return Response({
+      'id': 1,
       'url': 'https://github.com/augustogoulart/involved',
       'category': 'software',
       'title': 'Github - augustogoulart/involved',

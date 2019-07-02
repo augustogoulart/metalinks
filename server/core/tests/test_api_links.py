@@ -24,3 +24,4 @@ def test_api_links_get_response_content(response):
     assert b'category' in response.content
     assert b'title' in response.content
     assert b'description' in response.content
+    assert b'id' in response.content
