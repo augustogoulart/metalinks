@@ -1,6 +1,6 @@
 # involved
 
-API: [![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701/badge.svg?token=0035ead190556e73db03b82d6069781f3093eb948867a08b08149abea8f12a7f "buddy pipeline")](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701)
+API:&nbsp; &nbsp; &nbsp;[![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701/badge.svg?token=0035ead190556e73db03b82d6069781f3093eb948867a08b08149abea8f12a7f "buddy pipeline")](https://app.buddy.works/goulart/involved/pipelines/pipeline/190701)
 
 Client: [![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pipeline/196011/badge.svg?token=0035ead190556e73db03b82d6069781f3093eb948867a08b08149abea8f12a7f "buddy pipeline")](https://app.buddy.works/goulart/involved/pipelines/pipeline/196011)
 
