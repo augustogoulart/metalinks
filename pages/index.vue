@@ -1,10 +1,7 @@
 <template>
   <section>
     <Navbar />
-    <div>
-      {{links}}
-    </div>
-      <LinkList />
+      <LinkList :links="links" />
   </section>
 </template>
 
@@ -22,7 +19,7 @@ export default {
     await store.dispatch('links/fetchLinks')
   },
   computed: mapState({
-      links: state => state.links.links
+      links: state => state.links.links ? state.links.links:''
   })
 }
 </script>

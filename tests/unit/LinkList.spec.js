@@ -6,4 +6,10 @@ describe('LinkList', () => {
     const wrapper = mount(LinkList);
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
+
+  test('has links property', () => {
+    const wrapper = mount(LinkList);
+    wrapper.setProps({ links: [] });
+    expect(wrapper.props().links).toBeTruthy()
+  })
 });
