@@ -21,11 +21,11 @@ def get_links(request):
     :param request:
     :return JSON response
     """
-    return Response({
+    return Response([{
       'id': 1,
       'url': 'https://github.com/augustogoulart/involved',
       'category': 'software',
       'title': 'Github - augustogoulart/involved',
       'description': 'Learn modern web development on Instagram while '
                      'building an app for online communities'
-    })
+    }])
