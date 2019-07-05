@@ -10,7 +10,7 @@ Client: [![buddy pipeline](https://app.buddy.works/goulart/involved/pipelines/pi
 
 I'm teaching modern web development on Instagram while building a web app for online communities. Check it out on [@__gusgoulart __](https://www.instagram.com/__gusgoulart__/).
 
-Live at [https://involved-client.herokuapp.com/](https://involved-client.netlify.com/)
+Live at [https://involved-client.herokuapp.com/](https://involved-client.herokuapp.com/)
 
 
 
