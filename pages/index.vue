@@ -1,7 +1,7 @@
 <template>
   <section>
     <Navbar />
-      <LinkList :links="links" />
+      <LinkList />
   </section>
 </template>
 
@@ -18,9 +18,6 @@ export default {
   async fetch({store, error}) {
     await store.dispatch('links/fetchLinks')
   },
-  computed: mapState({
-      links: state => state.links.links ? state.links.links:''
-  })
 }
 </script>
 

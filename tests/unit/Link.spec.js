@@ -1,6 +1,5 @@
 import { mount } from '@vue/test-utils'
 import Link from '@/components/Link.vue'
-import LinkList from '@/components/LinkList.vue'
 
 describe('Link', () => {
   const wrapper = mount(Link);

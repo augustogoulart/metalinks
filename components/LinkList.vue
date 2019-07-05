@@ -12,15 +12,17 @@
 
 <script>
 import Link from '~/components/Link'
+import {mapState} from 'vuex'
+
 
 export default {
   name: 'LinkList',
   components: {
     Link
   },
-  props: {
-    links: Array
-  },
+  computed: mapState({
+      links: state => state.links.links
+  })
 }
 </script>
 

@@ -1,4 +1,5 @@
 // https://docs.cypress.io/api/introduction/api.html
+
 describe("Home test", () => {
   it("Home page shows 'Involved'", () => {
     cy.visit("/");
