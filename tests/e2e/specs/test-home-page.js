@@ -6,8 +6,13 @@ describe("Home test", () => {
     cy.contains("span", "Involved");
   });
 
-  it("Home has links", () => {
+  it("Home page has links", () => {
     cy.visit("/");
     cy.contains("a", "https://github.com/augustogoulart/involved");
+  });
+
+  it("Home page has input form", () => {
+    cy.visit("/");
+    cy.get("form").should('exist')
   })
 });
