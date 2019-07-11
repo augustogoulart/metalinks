@@ -1,13 +1,19 @@
 <template>
   <div class="container mx-auto">
     <form>
-      <input type="text">
+      <div class="my-4 pl-8 pr-8">
+        <label class="block text-gray-700 text-sm font-bold"></label>
+        <input
+          class="shadow appearance-none border rounded w-full py-4 px-5 text-gray-700
+          leading-tight focus:outline-none focus:shadow-outline"
+          id="username" type="text" placeholder="Store a new url">
+      </div>
     </form>
   </div>
 </template>
 
 <script>
-export default {
+  export default {
     name: "LinkInput"
-}
+  }
 </script>
