@@ -26,10 +26,6 @@ describe("Home test", () => {
   });
 
   it("Submited link displays on the screen", () => {
-    cy.get('form').within(($form) => {
-      cy.get('input[name="link"]').type(githubBlog);
-      cy.root().submit()
-    });
     cy.contains("a", "https://github.blog/")
   })
 });

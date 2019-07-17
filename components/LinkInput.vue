@@ -1,12 +1,12 @@
 <template>
   <div class="container mx-auto">
-    <form>
+    <form @submit.prevent="onsubmit">
       <div class="my-4 pl-8 pr-8">
         <label class="block text-gray-700 text-sm font-bold"></label>
-        <input
-          class="shadow appearance-none border rounded w-full py-4 px-5 text-gray-700
+        <input v-model="link.url"
+               class="shadow appearance-none border rounded w-full py-4 px-5 text-gray-700
           leading-tight focus:outline-none focus:shadow-outline"
-          name="link" type="text" placeholder="Store a new url">
+               name='link' type="text" placeholder="Store a new url">
       </div>
     </form>
   </div>
@@ -20,6 +20,15 @@ export default {
       link: {
         url: null
       }
+    }
+  },
+  methods: {
+    onsubmit() {
+      this.$store.dispatch('links/addLink', this.link);
+      this.clearInput()
+    },
+    clearInput() {
+      this.link = {}
     }
   }
 }

@@ -21,7 +21,7 @@ describe('Link', () => {
   test('has title property', () => {
     wrapper.setProps({title: 'some-title'});
     expect(wrapper.props().title).toBeTruthy()
-  })
+  });
 
   test('has description property', () => {
     wrapper.setProps({description: 'some-description'});
