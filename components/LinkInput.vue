@@ -6,14 +6,21 @@
         <input
           class="shadow appearance-none border rounded w-full py-4 px-5 text-gray-700
           leading-tight focus:outline-none focus:shadow-outline"
-          id="username" type="text" placeholder="Store a new url">
+          name="link" type="text" placeholder="Store a new url">
       </div>
     </form>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "LinkInput"
+export default {
+  name: "LinkInput",
+  data() {
+    return {
+      link: {
+        url: null
+      }
+    }
   }
+}
 </script>

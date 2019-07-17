@@ -8,10 +8,13 @@ const apiClient = axios.create({
     Accept: 'application/json',
     'Content-Type': 'application/json'
   }
-})
+});
 
 export default {
   getLinks() {
     return apiClient.get('links/')
+  },
+  postLink(link) {
+    return apiClient.post('links/', link)
   }
 }

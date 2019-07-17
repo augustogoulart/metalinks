@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto">
       <Link v-for="link in links"
-            key="link.id"
+            :key="link.id"
             :url="link.url"
             :category="link.category"
             :title="link.title"
