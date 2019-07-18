@@ -19,19 +19,14 @@ describe("Home test", () => {
   });
 
   it("Can submit link withing input field", () => {
-    cy.get('form').within(($form) => {
-      cy.get('input[name="link"]').type(githubBlog);
-      cy.root().submit()
-    });
+    cy.get('input[name="link"]').type(githubBlog);
+    cy.get('form').submit({method: "POST"})
+
   });
 
   it("Submited link displays on the screen", () => {
-    cy.get('form').within(($form) => {
-      cy.get('input[name="link"]').type(githubBlog);
-      cy.root().submit()
-
-    });
+    cy.get('input[name="link"]').type(githubBlog);
+    cy.get('form').submit({method: "POST"})
     cy.contains("a", "https://github.blog/")
-
   })
 });
