@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 export default {
   mode: 'universal',
   /*
@@ -52,6 +54,11 @@ export default {
         tailwindcss: './tailwind.config.js'
       }
     },
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env.BASE_URL': JSON.stringify(process.env.DEBUG ? "http://localhost:8000/api/": "https://involved-api.herokuapp.com/api/")
+      })
+    ],
     /*
     ** You can extend webpack config here
     */
