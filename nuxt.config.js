@@ -56,7 +56,7 @@ export default {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'process.env.BASE_URL': JSON.stringify(process.env.DEBUG ? "http://localhost:8000/api/": "https://involved-api.herokuapp.com/api/")
+        'process.env.API_URL': JSON.stringify(process.env.DEBUG ? "http://localhost:8000/api/": "https://involved-api.herokuapp.com/api/")
       })
     ],
     /*
