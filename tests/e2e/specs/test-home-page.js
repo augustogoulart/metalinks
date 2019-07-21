@@ -1,7 +1,7 @@
 // https://docs.cypress.io/api/introduction/api.html
 
 describe("Home test", () => {
-  const githubBlog = 'https://github.blog/';
+  const githubBlogURL = 'https://github.blog/';
 
   it("Home page shows 'Involved'", () => {
     cy.visit("/");
@@ -19,14 +19,21 @@ describe("Home test", () => {
   });
 
   it("Can submit link withing input field", () => {
-    cy.get('input[name="link"]').type(githubBlog);
-    cy.get('form').submit({method: "POST"})
+    cy.get('input[name="link"]').type(githubBlogURL);
+    cy.get('form').submit()
 
   });
 
-  it("Submited link displays on the screen", () => {
-    cy.get('input[name="link"]').type(githubBlog);
-    cy.get('form').submit({method: "POST"})
-    cy.contains("a", "https://github.blog/")
+  it("Submitted link displays on the screen", () => {
+    cy.get('input[name="link"]').type(githubBlogURL);
+    cy.get('form').submit();
+    cy.contains("a", githubBlogURL)
+  });
+
+  it("Submitted link must display across sessions", () => {
+    cy.get('input[name="link"]').type(githubBlogURL);
+    cy.get('form').submit();
+    cy.reload();
+    cy.contains("a", githubBlogURL)
   })
 });
