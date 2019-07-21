@@ -16,14 +16,14 @@ def post_payload():
     return payload
 
 
-def test_get_api_links_status_code(get_response):
+def test_get_links_status_code(get_response):
     """
     GET /api/links/ must return status code 200
     """
     assert get_response.status_code == 200
 
 
-def test_get_api_links_response_content(get_response):
+def test_get_links_response_content(get_response):
     """
     GET /api/links/ must return list of links
     """
@@ -35,7 +35,7 @@ def test_get_api_links_response_content(get_response):
     assert b'id' in response
 
 
-def test_post_api_links_status_code(client):
+def test_post_links_status_code(client):
     """
     POST /api/links/ must return status code 301
     """
@@ -44,7 +44,7 @@ def test_post_api_links_status_code(client):
     assert post_response.status_code == 301
 
 
-def test_post_api_links_response_content(client):
+def test_posted_links_response_content(client):
     """
     POST /api/links/ must return parsed metadata
     """
