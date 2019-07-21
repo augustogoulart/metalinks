@@ -5,19 +5,18 @@
   "author": "Augusto",
   "private": true,
   "scripts": {
-    "cy:run": "cypress run",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest && cypress run",
-    "test:unit": "jest",
-    "test:e2e": "cypress run",
     "cypress": "cypress open",
     "codecov": "codecov",
     "heroku-postbuild": "npm run build",
-    "test:cypress": "npm run build && npm run cy:start-server-and-test",
-    "cy:start-server-and-test": "npx start-server-and-test start :3000 cy:run"
+    "cy:run": "cypress run",
+    "test:e2e": "npm run build && npm run cy:start-server-and-test",
+    "cy:start-server-and-test": "npx start-server-and-test start :3000 cy:run",
+    "test:unit": "jest"
+
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
