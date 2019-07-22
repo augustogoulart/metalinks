@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+
+class Link(models.Model):
+    url = models.URLField()
+    category = models.CharField(max_length=64)
+    title = models.CharField(max_length=64)
+    description = models.TextField()
