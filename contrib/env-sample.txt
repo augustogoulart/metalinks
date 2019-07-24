@@ -1,4 +1,4 @@
 SECRET_KEY=9j#ogs)f_6=r%un7h4t9rr6zl2qv0md^8#^(oms+%wm*e42m%h
 DEBUG=True
 ALLOWED_HOSTS=localhost, .herokuapp.com
-DATABASE_URL=postgres://lentinforimimena:gighycherbumbeac@localhost/involved
+DATABASE_URL=postgres://root:root@postgres/involved
