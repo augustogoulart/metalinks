@@ -25,5 +25,6 @@ router.register(r'links', views.LinkViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('services/parser/', views.meta_parser),
+    path('api/', include(router.urls)),
 ]
