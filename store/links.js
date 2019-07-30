@@ -10,7 +10,7 @@ export const mutations = {
     state.links = links
   },
   ADD_LINK(state, link) {
-    state.links = [...state.links, link]
+    state.links = [link, ...state.links]
   }
 };
 
@@ -27,7 +27,6 @@ export const actions = {
 
     MetaParserService.parseMetaData(link).then(
       parsedData => {
-        console.log(parsedData.data);
         LinkService.postLink(parsedData.data).then(
           response => commit('ADD_LINK', response.data))
       });

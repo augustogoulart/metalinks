@@ -7,3 +7,4 @@ class Link(models.Model):
     title = models.CharField(max_length=64)
     description = models.TextField()
     image = models.URLField(blank=True, null=True)
+
