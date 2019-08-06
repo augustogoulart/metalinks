@@ -24,7 +24,6 @@ export const actions = {
 
     //Mocking the payload until we have a proper
     // way for processing metadata form HTML pages
-
     MetaParserService.parseMetaData(link).then(
       parsedData => {
         LinkService.postLink(parsedData.data).then(

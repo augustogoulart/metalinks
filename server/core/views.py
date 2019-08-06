@@ -15,11 +15,12 @@ class LinkViewSet(viewsets.ModelViewSet):
 @api_view(['POST'])
 def meta_parser(request):
     url = request.data.get('url')
-    title, description = parse_meta_data(url)
+    title, description, image = parse_meta_data(url)
 
     return Response({
         'url': url,
         'category': 'software',
         'title': title,
-        'description': description
+        'description': description,
+        'image': image
     })

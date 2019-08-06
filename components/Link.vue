@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white my-4 shadow p-8 rounded-lg md:flex">
     <div class="md:flex-shrink-0">
-    <img class="rounded-lg md:w-24" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
+    <img class="rounded-lg md:w-24" v-bind:src="image"
          alt="GitHub logo">
   </div>
   <div class="mt-4 md:mt-0 md:ml-6">
@@ -20,7 +20,8 @@
       url: String,
       category: String,
       title: String,
-      description: String
+      description: String,
+      image: String
     }
   }
 

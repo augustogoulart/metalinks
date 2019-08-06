@@ -6,6 +6,7 @@
             :category="link.category"
             :title="link.title"
             :description="link.description"
+            :image="link.image"
       />
     </div>
 </template>
