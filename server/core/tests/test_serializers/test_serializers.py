@@ -7,7 +7,8 @@ new_link = {
     'url': "https://github.blog/",
     'category': 'software',
     'title': "GitHub's Blog",
-    'description': "Cool article I just found"
+    'description': "Cool article I just found",
+    'image': "https://github.blog/wp-content/uploads/2019/03/blog-card.png?resize=1024,538"
 }
 
 

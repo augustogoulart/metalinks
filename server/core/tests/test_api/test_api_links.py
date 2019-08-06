@@ -1,11 +1,14 @@
 import pytest
+import io
 
+from rest_framework.parsers import JSONParser
 
 payload = {
     'url': "https://github.blog/",
     'category': 'software',
     'title': "GitHub's Blog",
-    'description': "Cool article I just found"
+    'description': "Cool article I just found",
+    'image': "https://github.blog/wp-content/uploads/2019/03/blog-card.png?resize=1024,538"
 }
 
 
@@ -39,11 +42,13 @@ def test_posted_links_response_content(client):
     """
     POST /api/links/ must return parsed metadata
     """
-    post_response_content = client.post('/api/links/', payload, follow=True).content
+    response = client.post('/api/links/', payload, follow=True, format='json').content
 
-    assert [
-        bytes(payload.get(key), 'utf-8') in post_response_content for key in payload
-    ]
+    stream = io.BytesIO(response)
+    post_response_content = JSONParser().parse(stream)
+
+    for field in payload:
+        assert field in post_response_content
 
 
 @pytest.mark.django_db()
