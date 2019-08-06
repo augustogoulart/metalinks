@@ -42,11 +42,17 @@ def parse_meta_data(url):
 
         try:
             title = title.text
-            description = description[0].get('content', None)
-            image = image[0].get('context', None)
         except (KeyError, TypeError, IndexError):
             title = ''
+
+        try:
+            description = description[0].get('content', None)
+        except (KeyError, TypeError, IndexError):
             description = ''
+
+        try:
+            image = image[0].get('context', None)
+        except (KeyError, TypeError, IndexError):
             image = ''
 
     return title, description, image

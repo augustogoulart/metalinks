@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white my-4 shadow p-8 rounded-lg md:flex">
+  <div class="bg-white my-4 shadow p-4 rounded-lg md:flex">
     <div class="md:flex-shrink-0">
-    <img class="rounded-lg md:w-24" v-bind:src="image"
+    <img class="rounded-lg w-64 h-32" v-bind:src="image"
          alt="GitHub logo">
   </div>
   <div class="mt-4 md:mt-0 md:ml-6">
