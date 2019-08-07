@@ -10,7 +10,7 @@ def parse_meta_data(url):
         html_doc = requests.get(url, headers=headers)
 
     soup = BeautifulSoup(html_doc.text, 'html.parser')
-    import ipdb; ipdb.set_trace()
+
     title = soup.find_all("meta", {"property": "og:title"})
 
     if not title:
