@@ -1,4 +1,5 @@
 import LinkService from '@/services/LinkService'
+import MetaParserService from '@/services/MetaParserService'
 
 export const state = () => ({
   links: []
@@ -9,7 +10,7 @@ export const mutations = {
     state.links = links
   },
   ADD_LINK(state, link) {
-    state.links = [...state.links, link]
+    state.links = [link, ...state.links]
   }
 };
 
@@ -20,18 +21,14 @@ export const actions = {
     })
   },
   addLink({commit}, link) {
+
     //Mocking the payload until we have a proper
     // way for processing metadata form HTML pages
-    let payload = {
-        'url': link.url,
-        'category': 'software',
-        'title': 'Github - augustogoulart/involved',
-        'description': 'Learn modern web development on Instagram while building an app for online communities'
-    };
-
-     return LinkService.postLink(payload).then(response => {
-      commit('ADD_LINK', response.data)
-    })
+    MetaParserService.parseMetaData(link).then(
+      parsedData => {
+        LinkService.postLink(parsedData.data).then(
+          response => commit('ADD_LINK', response.data))
+      });
   }
 };
 

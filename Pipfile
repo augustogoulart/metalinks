@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 codecov = "*"
 ipython = "*"
+ipdb = "*"
 
 [packages]
 django = "*"
@@ -20,6 +21,8 @@ pytest-cov = "*"
 coverage = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
+beautifulsoup4 = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"

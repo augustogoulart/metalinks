@@ -26,5 +26,10 @@ describe('Link', () => {
   test('has description property', () => {
     wrapper.setProps({description: 'some-description'});
     expect(wrapper.props().description).toBeTruthy()
+  });
+
+  test('has image property', () => {
+    wrapper.setProps({image: 'https://github.blog/wp-content/uploads/2019/03/blog-card.png'});
+    expect(wrapper.props().image).toBeTruthy()
   })
 });
